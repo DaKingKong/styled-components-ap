@@ -2,7 +2,7 @@ declare let SC_DISABLE_SPEEDY: boolean | null | undefined;
 declare let __VERSION__: string;
 
 export const SC_ATTR: string =
-  (typeof process !== 'undefined' && (process.env.REACT_APP_SC_ATTR || process.env.SC_ATTR)) ||
+  (typeof process !== 'undefined' && (process.env?.REACT_APP_SC_ATTR || process.env?.SC_ATTR)) ||
   'data-styled';
 
 export const SC_ATTR_ACTIVE = 'active';
